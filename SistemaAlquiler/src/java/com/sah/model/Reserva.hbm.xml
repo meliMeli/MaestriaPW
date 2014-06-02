@@ -3,9 +3,9 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 31-may-2014 8:42:20 by Hibernate Tools 3.2.1.GA -->
 <hibernate-mapping>
-    <class name="com.sah.model.Reserva" table="reserva" catalog="alquilerhabitdb">
+    <class name="com.sah.model.Reserva" table="reserva" catalog="alquilercuartos">
         <id name="idReserva" type="int">
-            <column name="id_reserva" />
+            <column name="idreserva" />
             <generator class="assigned" />
         </id>
     </class>
