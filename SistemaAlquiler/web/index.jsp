@@ -16,10 +16,14 @@
         <h1>
             <% 
             out.println("Hola meli melosa"); %>
-        </h1>
-        <%
-        Meli meli=new Meli();
-        out.print(meli.prueba());
-        %>
+        </ h1>
+        <form action="views/listahabitaciones.jsp" method="get">
+            <label>Ususario</label>
+            <input type="text" id="user" name="user"/>
+            <label>Password</label>
+            <input type="text" id="pass" name="pass"/>
+            <input type="submit" value="enviar"/>
+        </form>
+       
     </body>
 </html>

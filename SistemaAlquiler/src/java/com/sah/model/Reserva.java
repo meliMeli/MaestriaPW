@@ -1,5 +1,5 @@
 package com.sah.model;
-// Generated 31-may-2014 8:42:15 by Hibernate Tools 3.2.1.GA
+// Generated 03-jun-2014 21:09:45 by Hibernate Tools 3.2.1.GA
 
 
 
@@ -9,21 +9,48 @@ package com.sah.model;
 public class Reserva  implements java.io.Serializable {
 
 
-     private int idReserva;
+     private int idreserva;
+     private String fecha;
+     private String tiempo;
+     private String monto;
 
     public Reserva() {
     }
 
-    public Reserva(int idReserva) {
-       this.idReserva = idReserva;
+    public Reserva(int idreserva, String fecha, String tiempo, String monto) {
+       this.idreserva = idreserva;
+       this.fecha = fecha;
+       this.tiempo = tiempo;
+       this.monto = monto;
     }
    
-    public int getIdReserva() {
-        return this.idReserva;
+    public int getIdreserva() {
+        return this.idreserva;
     }
     
-    public void setIdReserva(int idReserva) {
-        this.idReserva = idReserva;
+    public void setIdreserva(int idreserva) {
+        this.idreserva = idreserva;
+    }
+    public String getFecha() {
+        return this.fecha;
+    }
+    
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+    public String getTiempo() {
+        return this.tiempo;
+    }
+    
+    public void setTiempo(String tiempo) {
+        this.tiempo = tiempo;
+    }
+    public String getMonto() {
+        return this.monto;
+    }
+    
+    public void setMonto(String monto) {
+        this.monto = monto;
     }
 
 

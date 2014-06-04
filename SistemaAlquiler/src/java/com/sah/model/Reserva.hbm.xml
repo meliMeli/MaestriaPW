@@ -1,12 +1,21 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 31-may-2014 8:42:20 by Hibernate Tools 3.2.1.GA -->
+<!-- Generated 03-jun-2014 21:09:45 by Hibernate Tools 3.2.1.GA -->
 <hibernate-mapping>
-    <class name="com.sah.model.Reserva" table="reserva" catalog="alquilercuartos">
-        <id name="idReserva" type="int">
+    <class name="com.sah.model.Reserva" table="reserva" catalog="alquilerhabitdb">
+        <id name="idreserva" type="int">
             <column name="idreserva" />
             <generator class="assigned" />
         </id>
+        <property name="fecha" type="string">
+            <column name="fecha" length="25" not-null="true" />
+        </property>
+        <property name="tiempo" type="string">
+            <column name="tiempo" length="30" not-null="true" />
+        </property>
+        <property name="monto" type="string">
+            <column name="monto" length="30" not-null="true" />
+        </property>
     </class>
 </hibernate-mapping>
