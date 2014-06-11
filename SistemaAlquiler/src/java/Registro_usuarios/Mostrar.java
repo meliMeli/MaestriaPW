@@ -38,10 +38,10 @@ public class Mostrar extends HttpServlet {
             throws ServletException, IOException {
         
         EntityManager em = Persistence.createEntityManagerFactory("SistemaAlquilerPU").createEntityManager();
-        List datos= em.createNamedQuery("Usuarios.findAll").getResultList();
+        List datos = em.createNamedQuery("Usuario.findAll").getResultList();
         request.setAttribute("datos", datos);
-        RequestDispatcher rd = request.getRequestDispatcher("Mostar.jsp");
-        rd.forward(request, response);
+        RequestDispatcher rd = request.getRequestDispatcher("Mostrar.jsp");
+        rd.forward(request, response);  
         
         
         }

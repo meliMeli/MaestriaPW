@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package controlDB;
+package controlBD;
 
 import java.io.Serializable;
 import javax.persistence.Basic;
@@ -21,17 +21,18 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author jorge
  */
 @Entity
-@Table(name = "cliente")
+@Table(name = "usuario")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Cliente.findAll", query = "SELECT c FROM Cliente c"),
-    @NamedQuery(name = "Cliente.findByIdcliente", query = "SELECT c FROM Cliente c WHERE c.idcliente = :idcliente"),
-    @NamedQuery(name = "Cliente.findByNombre", query = "SELECT c FROM Cliente c WHERE c.nombre = :nombre"),
-    @NamedQuery(name = "Cliente.findByApellido", query = "SELECT c FROM Cliente c WHERE c.apellido = :apellido"),
-    @NamedQuery(name = "Cliente.findByOcupacion", query = "SELECT c FROM Cliente c WHERE c.ocupacion = :ocupacion"),
-    @NamedQuery(name = "Cliente.findByCorreo", query = "SELECT c FROM Cliente c WHERE c.correo = :correo"),
-    @NamedQuery(name = "Cliente.findByTelefono", query = "SELECT c FROM Cliente c WHERE c.telefono = :telefono")})
-public class Cliente implements Serializable {
+    @NamedQuery(name = "Usuario.findAll", query = "SELECT u FROM Usuario u"),
+    @NamedQuery(name = "Usuario.findByIdcliente", query = "SELECT u FROM Usuario u WHERE u.idcliente = :idcliente"),
+    @NamedQuery(name = "Usuario.findByNombre", query = "SELECT u FROM Usuario u WHERE u.nombre = :nombre"),
+    @NamedQuery(name = "Usuario.findByApellido", query = "SELECT u FROM Usuario u WHERE u.apellido = :apellido"),
+    @NamedQuery(name = "Usuario.findByOcupacion", query = "SELECT u FROM Usuario u WHERE u.ocupacion = :ocupacion"),
+    @NamedQuery(name = "Usuario.findByCorreo", query = "SELECT u FROM Usuario u WHERE u.correo = :correo"),
+    @NamedQuery(name = "Usuario.findByTelefono", query = "SELECT u FROM Usuario u WHERE u.telefono = :telefono"),
+    @NamedQuery(name = "Usuario.findByDni", query = "SELECT u FROM Usuario u WHERE u.dni = :dni")})
+public class Usuario implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
@@ -52,15 +53,17 @@ public class Cliente implements Serializable {
     @Basic(optional = false)
     @Column(name = "telefono")
     private String telefono;
+    @Column(name = "dni")
+    private String dni;
 
-    public Cliente() {
+    public Usuario() {
     }
 
-    public Cliente(Integer idcliente) {
+    public Usuario(Integer idcliente) {
         this.idcliente = idcliente;
     }
 
-    public Cliente(Integer idcliente, String nombre, String apellido, String ocupacion, String correo, String telefono) {
+    public Usuario(Integer idcliente, String nombre, String apellido, String ocupacion, String correo, String telefono) {
         this.idcliente = idcliente;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -117,6 +120,14 @@ public class Cliente implements Serializable {
         this.telefono = telefono;
     }
 
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -127,10 +138,10 @@ public class Cliente implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Cliente)) {
+        if (!(object instanceof Usuario)) {
             return false;
         }
-        Cliente other = (Cliente) object;
+        Usuario other = (Usuario) object;
         if ((this.idcliente == null && other.idcliente != null) || (this.idcliente != null && !this.idcliente.equals(other.idcliente))) {
             return false;
         }
@@ -139,7 +150,11 @@ public class Cliente implements Serializable {
 
     @Override
     public String toString() {
-        return "controlDB.Cliente[ idcliente=" + idcliente + " ]";
+        return "controlBD.Usuario[ idcliente=" + idcliente + " ]";
+    }
+
+    public void setIdusuario(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

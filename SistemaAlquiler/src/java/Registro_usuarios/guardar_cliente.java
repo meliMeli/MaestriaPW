@@ -38,9 +38,9 @@ public class guardar_cliente extends HttpServlet {
         
         String nombre = request.getParameter("nombre");
         String apellido = request.getParameter("apellido");
-        controlDB.Cliente usuario = new controlDB.Cliente();
+        controlBD.Usuario usuario = new controlBD.Usuario();
         
-        usuario.setIdcliente(0);
+        usuario.setIdusuario(0);
         usuario.setNombre(nombre);
         usuario.setApellido(apellido);
         
@@ -53,9 +53,7 @@ public class guardar_cliente extends HttpServlet {
         em.persist(usuario);
         em.flush();
         em.getTransaction().commit();
-        response.sendRedirect("registrado.jsp");
-        
-        
+        response.sendRedirect("registrado.jsp");        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -96,17 +94,4 @@ public class guardar_cliente extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
-    private void setApellido(String apellido) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private void setIdcliente(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private void setNombre(String nombre) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
 }

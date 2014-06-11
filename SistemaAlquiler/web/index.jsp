@@ -13,11 +13,11 @@
     </head>
     <body>
         <h1>Datos</h1>
-        <form action="guardar" method="Post">
+        <form action="guardar_cliente" method="Post">
             Nomre:<input type="text" name="nombre"><br/>
             Apellido:<input type="text" name="apellido"><br/>
-            <input type="submit" value="Guardar">
-            <a href="Mostrar"> Mostrar</a>
+            <input type="submit" value="Guardar datos">
+            <a href="Mostrar"> Mostrar </a>
         </form>
     </body>
 </html>

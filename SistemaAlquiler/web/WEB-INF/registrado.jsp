@@ -13,6 +13,6 @@
     </head>
     <body>
         <h1>Se registro correctamente! =)</h1>
-        <a href="index.jsp"> volver a inicio </a>
+        <a href="index.jsp"><input type="submit" value="Regresar al inicio" </a>
     </body>
 </html>
