@@ -6,7 +6,7 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>inicio.jsp</welcome-file>
     </welcome-file-list>
     <!-- servlet>
         <servlet-name>login</servlet-name>
@@ -16,7 +16,11 @@
         <servlet-name>login</servlet-name>
         <url-pattern>/SimpleServlet</url-pattern>
     </servlet-mapping-->
-    
+<!--   
+    <servlet>
+        <servlet-name>detalle_habitacion</servlet-name>
+        <url-pattern>/detalleHabit</url-pattern>
+    </servlet>-->
     
     <welcome-file-list>
         <welcome-file>faces/Vendedor.xhtml</welcome-file>
