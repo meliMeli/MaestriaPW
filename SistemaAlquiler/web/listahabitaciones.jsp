@@ -3,8 +3,16 @@
     Created on : 03-jun-2014, 23:23:24
     Author     : Meli
 --%>
+<<<<<<< HEAD
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="com.sah.controller.Meli"%>
+=======
+<%@page import="com.sah.model.entities.Cuarto"%>
+<%@page import="java.util.List"%>
+<%@page import="com.sah.model.dao.HabitacionDAOHibernate"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+>>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
 
 <!DOCTYPE html>
 <html>
@@ -34,6 +42,7 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class=" span2">
+<<<<<<< HEAD
                 </div>
                 <div class=" span10">
                     <h1>SAH</h1>
@@ -72,6 +81,87 @@
 <!--                    <form action="detalle_habitacion.jsp" method="get">
                         <p><a role="button" class="btn btn-primary">Ver detalles »</a></p>
                     </form>-->
+=======
+                    <% out.print(request.getAttribute("msg"));%>
+                </div>
+                <div class=" span10">
+                    <div class="span12">
+                    <div class="span5">
+                        <h1>SAH</h1>
+                        <label>Usuario:</label>
+                        <input type="text" value="<%out.print(request.getParameter("user"));%>" name="val"/>
+                   
+                    </div>
+
+
+                    <div class="span7 right">
+                        <a href="inicio.jsp" class="navbar-brand">Inicio</a>
+                    </div>
+                     </div>
+                        
+                         <h2>Lista de habitaciones en Arequipa</h2>
+                   
+                    <hr>
+                    <!--<input type="submit" href="registro_cuartos.jsp" value="Agregar cuarto" class="btn btn-success btn-large" >-->
+                    <a role="button" href="registro_cuartos.jsp" class="btn btn-primary">Agregar cuartos +</a>
+
+
+
+                    <fieldset>
+
+                        <div id="id-table">                        
+                            <table id="listado" class="table table-bordered table-hover table-striped" >
+                                <thead>
+                                    <tr > 
+                                        <th>Nro</th> 
+                                        <th>Dirección</th>                             
+                                        <th>Características</th>  
+                                        <th>Restricciones</th> 
+                                        <th>Teléfono contacto</th> 
+                                        <th>Ver</th> 
+
+
+                                    </tr>  
+                                </thead>
+                                <tbody>
+                                    <%
+                                        HabitacionDAOHibernate habitacion;
+                                        habitacion = new HabitacionDAOHibernate();
+                                        habitacion.init();
+
+                                        List<Cuarto> listaHabita = habitacion.obtenerListaHabitaciones();
+                                        System.out.println("safas " + listaHabita.size());
+                                        int status = 0;
+                                        for (Cuarto alumno : listaHabita) {
+
+                                    %>     
+
+                                    <tr id="<%=status%>" >
+                                        <td><%=status + 1%></td>
+                                        <td><%=alumno.getDireccion()%></td>
+                                        <td><%=alumno.getCaracteristicas()%></td>  
+                                        <td><%=alumno.getRestricciones()%></td>
+                                        <td><%=alumno.getTelefonoContacto()%></td>
+
+                                        <td> <a role="button" href="detalle_habitacion.jsp" class="btn btn-primary">Ver detalles »</a></td> 
+                                    </tr>
+                                    <%
+                                            status++;
+                                        }
+                                    %>
+                                </tbody>                            
+                            </table>
+                            <div class="pagination pagination-centered">        
+                                <ul id="pagination"> </ul>
+                            </div>
+                        </div>
+
+
+                    </fieldset>      
+                    <!--                    <form action="detalle_habitacion.jsp" method="get">
+                                            <p><a role="button" class="btn btn-primary">Ver detalles »</a></p>
+                                        </form>-->
+>>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
 
 
 

@@ -4,7 +4,11 @@
     Author     : Meli
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<<<<<<< HEAD
 <%@page import="com.sah.controller.Meli"%>
+=======
+
+>>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
 
 <!DOCTYPE html>
 <html>
@@ -31,6 +35,7 @@
 
     </head>
     <body>
+<<<<<<< HEAD
 
 
         <div class="container-fluid fondoGris">
@@ -42,12 +47,22 @@
                 <c:url var="url" value="/registrarCuartos.html" />
                 <form:form id="frmDatosAlumno" modelAttribute="registro"   method="post"  action="${url}"  cssClass="form-horizontal">
 
+=======
+        <div class="container-fluid fondoGris">
+            <div class="row-fluid  div-titulo">
+                <h3 class="span6">Registrar Habitación </h3>
+                <div class="span6"> <a  href="listarAlumnos.html" class=" btn btn-info fa-input pull-right">Volver a Listado</a>   </div> 
+            </div>
+            <div class="row-fluid formulario">
+                <form id="frmReghab" method="GET"  action="registroHabitacion"  class="form-horizontal">
+>>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
                     <fieldset >
                         <legend><h4>Datos Habitación</h4></legend>
                         <div class="row-fluid">
 
                             <div class="span6">
 
+<<<<<<< HEAD
                                 <div class="control-group">
                                     <label   class="control-label" for="nombre">Ubicación</label>                
                                     <div class="controls">
@@ -59,26 +74,86 @@
                                     <label  class="control-label"    for="direccion">Dirección </label>                            
                                     <div class="controls">
                                         <input id="primerApellido" path="direccion" class="input-xlarge" onkeypress="return valSoloLetras(event);"  onchange="javascript:this.value=this.value.toUpperCase();llenarUsuario();"  type="text"  />
+=======
+                                <!--                                <div class="control-group">
+                                                                    <label   class="control-label" for="departamento">Departamento</label>                
+                                                                    <div class="controls">
+                                                                        <input id="departamento" path="nombre" class="input-xlarge"  onkeypress="return valSoloLetras(event);" onchange="javascript:this.value=this.value.toUpperCase();" type="text"/>
+                                                                        <form:errors  path="nombre"  cssClass="help-block"/>   
+                                                                    </div>
+                                                                </div>
+                                                                <div class="control-group">
+                                                                    <label   class="control-label" for="provincia">Provincia</label>
+                                                                    <div class="controls">
+                                                                        <input id="nombre" path="provincia" class="input-xlarge" type="text"/>
+                                                                        <form:errors  path="nombre"  cssClass="help-block"/>   
+                                                                    </div>
+                                                                </div>  
+                                                                <div class="control-group">
+                                                                    <label   class="control-label" for="distrito">Distrito</label>                
+                                                                    <div class="controls">
+                                                                        <input id="nombre" path="distrito" class="input-xlarge"  type="text"/>
+                                                                        <form:errors  path="nombre"  cssClass="help-block"/>   
+                                                                    </div>  
+                                                                </div>  -->
+                                <!--                                <div class="control-group">
+                                                                    <label   class="control-label" for="detalleUbicacion">Ubicación</label>                
+                                                                    <div class="controls">
+                                                                        <input id="ubicacion" name="detalleUbicacion" path="detalleUbicacion" class="input-xlarge"  type="text"/>
+                                                                        <form:errors  path="nombre"  cssClass="help-block"/>   
+                                                                    </div>  
+                                                                </div>  -->
+
+
+                                <div class="control-group">
+                                    <label  class="control-label"    for="direccion">Dirección </label>                            
+                                    <div class="controls">
+                                        <input id="direccion" name="direccion" path="direccion" class="input-xlarge" type="text"  />
+>>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
                                         <!--<form:errors  path="direccion" cssClass="help-block"/>-->                      
                                     </div>  
                                 </div>   
                                 <div class="control-group">
+<<<<<<< HEAD
                                     <label   class="control-label"   for="detalle">Detalle</label>                           
                                     <div class="controls">
                                         <input id="segundoApellido" path="detalle" class="input-xlarge" onkeypress="return valSoloLetras(event);"  onchange="javascript:this.value=this.value.toUpperCase();llenarUsuario();" type="text"  />
                                         <!--<form:errors path="detalle" cssClass="help-block"/>-->    
                                     </div>
                                 </div> 
+=======
+                                    <label class="control-label" for="detalle">Características</label>                           
+                                    <div class="controls">
+                                        <input id="detalle" name="detalle" class="input-xlarge"  type="text"  />
+                                        <!--<form:errors path="detalle" cssClass="help-block"/>-->    
+                                    </div>
+                                </div> 
+                                <div class="control-group">
+                                    <label class="control-label" for="restricciones">Restricciones</label>                           
+                                    <div class="controls">
+                                        <input id="restricciones" name="restricciones" class="input-xlarge"  type="text"  />
+                                        <!--<form:errors path="detalle" cssClass="help-block"/>-->    
+                                    </div>
+                                </div> 
+
+>>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
                             </div>
 
 
                             <div class="span6">
 
+<<<<<<< HEAD
 
                                 <div class="control-group">
                                     <label class="control-label" for="telefono">Teléfono contacto </label>                            
                                     <div class="controls">
                                         <input id="celular" path="telefono" class="input-large"   type="text"  />
+=======
+                                <div class="control-group">
+                                    <label class="control-label" for="telefonoContacto">Teléfono contacto </label>                            
+                                    <div class="controls">
+                                        <input id="telefonoContacto" path="telefonoContacto" class="input-large"   type="text"  />
+>>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
                                         <!--<form:errors  path="celular" cssClass="help-block"/>-->      
                                     </div> 
                                 </div>
@@ -116,11 +191,20 @@
                             </div> 
                         </div>
                     </fieldset> 
+<<<<<<< HEAD
                 </form:form>
+=======
+                </form>
+>>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
 
             </div>
         </div>
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
     </body>
     <footer class="text-center">
         <div class="footer-below">
