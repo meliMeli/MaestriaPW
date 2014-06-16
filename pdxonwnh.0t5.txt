@@ -1,0 +1,52 @@
+﻿Merge branch 'master' of https://github.com/meliMeli/MaestriaPW
+
+Conflicts:
+	SistemaAlquiler/nbproject/build-impl.xml
+	SistemaAlquiler/nbproject/genfiles.properties
+	SistemaAlquiler/nbproject/project.properties
+	SistemaAlquiler/src/java/com/sah/model/hibernate.reveng.xml
+	SistemaAlquiler/src/java/hibernate.cfg.xml
+	SistemaAlquiler/web/WEB-INF/web.xml
+	SistemaAlquiler/web/detalle_habitacion.jsp
+	SistemaAlquiler/web/inicio.jsp
+	SistemaAlquiler/web/listahabitaciones.jsp
+	SistemaAlquiler/web/registro_cuartos.jsp
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 5 and 7 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#   (use "git commit" to conclude merge)
+#
+# Changes to be committed:
+#
+#	modified:   SistemaAlquiler/build/web/WEB-INF/classes/com/sah/model/hibernate.reveng.xml
+#	modified:   SistemaAlquiler/build/web/WEB-INF/classes/hibernate.cfg.xml
+#	modified:   SistemaAlquiler/build/web/WEB-INF/web.xml
+#	modified:   SistemaAlquiler/build/web/detalle_habitacion.jsp
+#	modified:   SistemaAlquiler/build/web/inicio.jsp
+#	modified:   SistemaAlquiler/build/web/listahabitaciones.jsp
+#	modified:   SistemaAlquiler/build/web/registro_cuartos.jsp
+#	modified:   SistemaAlquiler/nbproject/build-impl.xml
+#	modified:   SistemaAlquiler/nbproject/genfiles.properties
+#	modified:   SistemaAlquiler/nbproject/project.properties
+#	modified:   SistemaAlquiler/nbproject/project.xml
+#	modified:   SistemaAlquiler/src/java/com/sah/model/hibernate.reveng.xml
+#	modified:   SistemaAlquiler/src/java/hibernate.cfg.xml
+#	modified:   SistemaAlquiler/web/WEB-INF/web.xml
+#	modified:   SistemaAlquiler/web/detalle_habitacion.jsp
+#	modified:   SistemaAlquiler/web/inicio.jsp
+#	modified:   SistemaAlquiler/web/listahabitaciones.jsp
+#	modified:   SistemaAlquiler/web/registro_cuartos.jsp
+#
+
