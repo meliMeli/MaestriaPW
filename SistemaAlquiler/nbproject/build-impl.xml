@@ -985,8 +985,14 @@ exists or setup the property manually. For example like this:
     </target>
     <target depends="init" name="library-inclusion-in-archive" unless="dist.ear.dir">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <copyfiles files="${libs.hibernate4-support.classpath}" todir="${build.web.dir}/WEB-INF/lib"/>
         <copyfiles files="${file.reference.mysql-connector-net-6.3.6__1_.zip}" todir="${build.web.dir}/WEB-INF/lib"/>
+=======
+        <!--<copyfiles files="${libs.hibernate4-support.classpath}" todir="${build.web.dir}/WEB-INF/lib"/>-->
+        <!--<copyfiles files="${libs.jpa2-persistence.classpath}" todir="${build.web.dir}/WEB-INF/lib"/>-->
+        <!--<copyfiles files="${file.reference.mysql-connector-net-6.3.6__1_.zip}" todir="${build.web.dir}/WEB-INF/lib"/>-->
+>>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
 =======
         <!--<copyfiles files="${libs.hibernate4-support.classpath}" todir="${build.web.dir}/WEB-INF/lib"/>-->
         <!--<copyfiles files="${libs.jpa2-persistence.classpath}" todir="${build.web.dir}/WEB-INF/lib"/>-->

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <%-- 
     Document   : index
     Created on : 31-may-2014, 7:12:37
@@ -6,12 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="com.sah.controller.Meli"%>
-=======
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%--<%@page import="com.sah.controller.Meli"%>--%>
->>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
 <!DOCTYPE html>
 <html>
     <head>
@@ -38,7 +31,6 @@
         <!-- Fonts -->
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<<<<<<< HEAD
     </head>
     <body>
 
@@ -47,14 +39,11 @@
 
 
         <nav class="navbar navbar-default navbar-fixed-top">
-=======
-   
     </head>
     <body>
         
 
    <nav class="navbar navbar-default navbar-fixed-top">
->>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header page-scroll">
@@ -69,7 +58,6 @@
                             <a href="#page-top"></a>
                         </li>
                         <li class="page-scroll">
-<<<<<<< HEAD
                             <a href="views/registrar_cliente.jsp">Regístrate</a>
                         </li>
                         <li class="page-scroll">
@@ -79,14 +67,11 @@
                             <a href="views/contactenos.jsp" method="get">Contactános</a>
 
                         </li>
-=======
                             <a href="registro_clientes.jsp">Regístrate</a>
                         </li>
                         <li class="page-scroll">
                             <a href="sobre_nosotras.jsp">Sobre nosotras</a>
                         </li>
-                       
->>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
                         <li class="page-scroll">
                             <!--<form action="views/listahabitaciones.jsp" method="get">-->
                            <form action="listahabitaciones.jsp" method="get">
@@ -106,16 +91,12 @@
                 <!-- /.navbar-collapse -->
             </div>
             <!-- /.container-fluid -->
-<<<<<<< HEAD
         </nav>
-          <header>
-=======
-               
+          <header>  
    </nav>
         
         
         <header>
->>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -130,19 +111,7 @@
                 </div>
             </div>
         </header>
-<<<<<<< HEAD
 
-      
-
-
-
-=======
-     
-    
-         
-        
-        
->>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
         <footer class="text-center">
             <div class="footer-below">
                 <div class="container">
