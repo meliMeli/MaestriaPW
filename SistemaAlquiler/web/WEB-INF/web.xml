@@ -30,5 +30,4 @@
     <welcome-file-list>
         <welcome-file>faces/Vendedor.xhtml</welcome-file>
     </welcome-file-list>
-
 </web-app>
