@@ -1,11 +1,6 @@
-<%-- 
-    Document   : index
-    Created on : 31-may-2014, 7:12:37
-    Author     : Meli
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="com.sah.controller.Meli"%>
+<%--<%@page import="com.sah.controller.Meli"%>--%>
 <!DOCTYPE html>
 <html>
     <head>
