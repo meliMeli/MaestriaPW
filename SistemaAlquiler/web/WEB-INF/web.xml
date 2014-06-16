@@ -17,6 +17,7 @@
         <url-pattern>/SimpleServlet</url-pattern>
     </servlet-mapping-->
 <!--   
+
     <servlet>
         <servlet-name>detalle_habitacion</servlet-name>
         <url-pattern>/detalleHabit</url-pattern>

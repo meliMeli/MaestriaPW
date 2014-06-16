@@ -1,5 +1,5 @@
-package com.sah.model;
-// Generated 03-jun-2014 21:09:45 by Hibernate Tools 3.2.1.GA
+package com.sah.model.entities;
+// Generated 11-jun-2014 0:40:44 by Hibernate Tools 3.2.1.GA
 
 
 
@@ -10,6 +10,7 @@ public class Detalle  implements java.io.Serializable {
 
 
      private int iddetalle;
+     private Cuarto cuarto;
      private String objetos;
      private String estado;
      private String cantidad;
@@ -17,8 +18,16 @@ public class Detalle  implements java.io.Serializable {
     public Detalle() {
     }
 
+	
     public Detalle(int iddetalle, String objetos, String estado, String cantidad) {
+        this.iddetalle = iddetalle;
+        this.objetos = objetos;
+        this.estado = estado;
+        this.cantidad = cantidad;
+    }
+    public Detalle(int iddetalle, Cuarto cuarto, String objetos, String estado, String cantidad) {
        this.iddetalle = iddetalle;
+       this.cuarto = cuarto;
        this.objetos = objetos;
        this.estado = estado;
        this.cantidad = cantidad;
@@ -30,6 +39,13 @@ public class Detalle  implements java.io.Serializable {
     
     public void setIddetalle(int iddetalle) {
         this.iddetalle = iddetalle;
+    }
+    public Cuarto getCuarto() {
+        return this.cuarto;
+    }
+    
+    public void setCuarto(Cuarto cuarto) {
+        this.cuarto = cuarto;
     }
     public String getObjetos() {
         return this.objetos;

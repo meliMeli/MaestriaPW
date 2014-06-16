@@ -32,14 +32,12 @@
         <!-- Fonts -->
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+   
     </head>
     <body>
+        
 
-
-
-
-
-        <nav class="navbar navbar-default navbar-fixed-top">
+   <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header page-scroll">
@@ -54,15 +52,12 @@
                             <a href="#page-top"></a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#portfolio">Regístrate</a>
+                            <a href="registro_clientes.jsp">Regístrate</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#about">Sobro nosotros</a>
+                            <a href="sobre_nosotras.jsp">Sobre nosotras</a>
                         </li>
-                        <li class="page-scroll">
-                            <a href="#contact">Contactános</a>
-
-                        </li>
+                       
                         <li class="page-scroll">
                             <!--<form action="views/listahabitaciones.jsp" method="get">-->
                            <form action="listahabitaciones.jsp" method="get">
@@ -82,8 +77,11 @@
                 <!-- /.navbar-collapse -->
             </div>
             <!-- /.container-fluid -->
-        </nav>
-          <header>
+               
+   </nav>
+        
+        
+        <header>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -98,11 +96,11 @@
                 </div>
             </div>
         </header>
-
-      
-
-
-
+     
+    
+         
+        
+        
         <footer class="text-center">
             <div class="footer-below">
                 <div class="container">
