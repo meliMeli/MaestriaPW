@@ -40,13 +40,16 @@
                 <form id="frmReghab" method="GET"  action="registroHabitacion"  class="form-horizontal">
                     <fieldset >
                        
-                       Karla Fernandez
+                       Karla Fernandez:Estudiante de maestría en Tecnologías de la información
+                       Profesional graduada de la Universidad Catolica Santa María
                     </fieldset>
 
 
                     <fieldset>
                         
-                       Melissa Abarca
+                       Melissa Abarca: Estudiante de maestría en Tecnologías de la información
+                        Profesional graduada de la Universidad Nacional de San Agustin
+             
                     </fieldset> 
                 </form>
 
