@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-jun-2014 21:09:45 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.sah.model.Cuarto" table="cuarto" catalog="alquilerhabitdb">
+        <id name="idcuarto" type="int">
+            <column name="idcuarto" />
+            <generator class="assigned" />
+        </id>
+        <property name="caracteristicas" type="string">
+            <column name="caracteristicas" length="50" not-null="true" />
+        </property>
+        <property name="banio" type="string">
+            <column name="banio" length="2" not-null="true" />
+        </property>
+        <property name="restricciones" type="string">
+            <column name="restricciones" length="60" not-null="true" />
+        </property>
+        <property name="estado" type="string">
+            <column name="estado" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
