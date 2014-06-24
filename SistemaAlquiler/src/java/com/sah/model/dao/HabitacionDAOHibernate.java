@@ -87,7 +87,6 @@ public class HabitacionDAOHibernate extends DAOGenerico{
                operacionDevVO = listaOperacion.get(0);
         return operacionDevVO;
     }
-
  */
      
 }

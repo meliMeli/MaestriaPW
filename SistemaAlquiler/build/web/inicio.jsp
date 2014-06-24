@@ -58,7 +58,7 @@
                             <a href="#page-top"></a>
                         </li>
                         <li class="page-scroll">
-                            <a href="views/registrar_cliente.jsp">Regístrate</a>
+                            <a href="registrate.jsp">Regístrate</a>
                         </li>
                         <li class="page-scroll">
                             <a href="views/sobre_nosotros.jsp" method="get">Sobre nosotros </a>
@@ -66,12 +66,6 @@
                         <li class="page-scroll">
                             <a href="views/contactenos.jsp" method="get">Contactános</a>
 
-                        </li>
-                            <a href="registro_clientes.jsp">Regístrate</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a href="sobre_nosotras.jsp">Sobre nosotras</a>
-                        </li>
                         <li class="page-scroll">
                             <!--<form action="views/listahabitaciones.jsp" method="get">-->
                            <form action="listahabitaciones.jsp" method="get">

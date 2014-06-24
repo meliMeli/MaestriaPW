@@ -1,0 +1,5 @@
+﻿131 ropa
+35 polo
+50 camisa
+150 zap
+340 cel
