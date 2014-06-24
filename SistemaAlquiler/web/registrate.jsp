@@ -39,14 +39,20 @@
                 <c:url var="url" value="/registrate.html" />
                 <form:form id="frmDatosAlumno" modelAttribute="tipo_cliente"   method="post"  action="${url}"  cssClass="form-horizontal">
                     <fieldset>
-                        <legend></legend>    
+                        <legend></legend> 
+                        
                         <div class="row-fluid "> 
                             <div class="span12 form-actions">
                                 <div class="control-group">
                                     <div class="controls">
                                         <!--<input id="btnCliente" type="submit" class="btn btn-info fa-input" name="Cliente" value="Tipo de Cliente"> &nbsp;--> 
                                         <a class="btn btn-info fa-input right" href="registrar_cliente.jsp"> Cliente </a> &nbsp;
-                                        <a class="btn btn-info fa-input right" href="registro_arrendatario.jsp"> Arrendatario </a> &nbsp;
+                                        <a class="btn btn-info fa-input right" href="registro_arrendatario.jsp"> Arrendatario </a> &nbsp &nbsp &nbsp;
+                                        <td></td>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
                                         <a class="btn btn-info fa-input right" href="inicio.jsp"> Regresar al inicio </a>  
                                     </div> 
                                 </div>

@@ -6,7 +6,21 @@
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/alquilerhabitdb?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>
+<<<<<<< HEAD
     <property name="hibernate.connection.password">123456</property>
+=======
+<<<<<<< HEAD
+    <property name="hibernate.connection.password">123456</property>
+    <mapping resource="com/sah/model/Arrendatario.hbm.xml"/>
+    <mapping resource="com/sah/model/Cliente.hbm.xml"/>
+    <mapping resource="com/sah/model/Reserva.hbm.xml"/>
+    <mapping resource="com/sah/model/Detalle.hbm.xml"/>
+    <mapping resource="com/sah/model/Historial.hbm.xml"/>
+    <mapping resource="com/sah/model/Ubicacion.hbm.xml"/>
+    <mapping resource="com/sah/model/Cuarto.hbm.xml"/>
+=======
+    <property name="hibernate.connection.password">desarrollo</property>
+>>>>>>> parent of 78b6987... sinconflict
     <property name="hibernate.current_session_context_class">thread</property>
     <property name="hibernate.connection.isolation">2</property>
     <mapping resource="com/sah/model/mapping/Arrendatario.hbm.xml"/>
@@ -16,5 +30,9 @@
     <mapping resource="com/sah/model/mapping/Ubicacion.hbm.xml"/>
     <mapping resource="com/sah/model/mapping/Cuarto.hbm.xml"/>
     <mapping resource="com/sah/model/mapping/Comentarios.hbm.xml"/>
+<<<<<<< HEAD
+=======
+>>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
+>>>>>>> parent of 78b6987... sinconflict
   </session-factory>
 </hibernate-configuration>

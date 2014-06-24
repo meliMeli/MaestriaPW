@@ -1,7 +1,7 @@
 <%-- 
     Document   : listahabitaciones
     Created on : 03-jun-2014, 23:23:24
-    Author     : 
+    Author     : jorge
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
@@ -33,44 +33,67 @@
     <body>
         <div class="container-fluid fondoGris">
             <div class="row-fluid  div-titulo">
-                <h3 class="span6">Registrar Cliente </h3>
+                <h3 class="span6">Registrar Nuevo Arrendatario </h3>
                 <!--<div class="span6"> <a  href="listarAlumnos.html" class=" btn btn-info fa-input pull-right">Volver a Listado</a>   </div>--> 
             </div>
             <div class="row-fluid formulario">
-                <form id="frmReghab" method="GET"  action="registroCliente"  class="form-horizontal">
+                <form id="frmReghab" method="GET"  action="registroArrendatario"  class="form-horizontal">
+                    <form:form id="frmDatosAlumno" modelAttribute="registro_arrendatario"   method="post"  action="${url}"  cssClass="form-horizontal">
+
                     <fieldset >
-                        <legend><h4>Datos Habitación</h4></legend>
+                        <legend><h4>Complete sus datos</h4></legend>
                         <div class="row-fluid">
 
                             <div class="span6">
 
                                 <div class="control-group">
-                                    <label   class="control-label" for="nombre">Nombres</label>                
+                                    <label   class="control-label" for="nombres">Nombres</label>                
                                     <div class="controls">
-                                        <input id="ubicacion" name="nombre" path="nombre" class="input-xlarge"  type="text"/>
+                                        <input id="nombre" path="nombres" class="input-xlarge"  onkeypress="return valSoloLetras(event);" onchange="javascript:this.value=this.value.toUpperCase();llenarUsuario();" type="text"/>
                                         <!--<form:errors  path="nombre"  cssClass="help-block"/>-->   
                                     </div>  
                                 </div>  
                                 <div class="control-group">
-                                    <label  class="control-label"    for="apellido">Apellidos </label>                            
+                                    <label  class="control-label"    for="apellidos">Apellidos</label>                            
                                     <div class="controls">
-                                        <input id="direccion" name="apellido" path="apellido" class="input-xlarge" type="text"  />
+                                        <input id="primerApellido" path="apellidos" class="input-xlarge" onkeypress="return valSoloLetras(event);"  onchange="javascript:this.value=this.value.toUpperCase();llenarUsuario();"  type="text"  />
                                         <!--<form:errors  path="direccion" cssClass="help-block"/>-->                      
                                     </div>  
                                 </div>   
-                             </div>
+                                <div class="control-group">
+                                    <label   class="control-label"   for="ocupacion">Ocupación</label>                           
+                                    <div class="controls">
+                                        <input id="segundoApellido" path="ocupacion" class="input-xlarge" onkeypress="return valSoloLetras(event);"  onchange="javascript:this.value=this.value.toUpperCase();llenarUsuario();" type="text"  />
+                                        <!--<form:errors path="detalle" cssClass="help-block"/>-->    
+                                    </div>
+                                </div>
+                                
+                            </div>
 
 
                             <div class="span6">
 
                                 <div class="control-group">
-                                    <label class="control-label" for="correo">Correo </label>                            
+                                    <label class="control-label" for="correo">Correo electrónico </label>                            
                                     <div class="controls">
                                         <input id="celular" path="correo" class="input-large"   type="text"  />
                                         <!--<form:errors  path="celular" cssClass="help-block"/>-->      
-                                    </div> 
+                                    </div>
                                 </div>
-                                
+                                <div class="control-group">
+                                    <label class="control-label" for="telefono">Teléfono </label>                            
+                                    <div class="controls">
+                                        <input id="celular" path="telefono" class="input-large"   type="text"  />
+                                        <!--<form:errors  path="celular" cssClass="help-block"/>-->      
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label  class="control-label"   for="dni">Número de DNI</label>      
+                                    <div class="controls">
+                                        <input id="fechaNacimiento" path="dni" class="input-small" type="text" />
+                                        <!--<form:errors  path="foto" cssClass="help-block"/>-->
+                                    </div>
+                                </div>
 
 
                             </div>
@@ -91,13 +114,14 @@
                                 <div class="control-group">
                                     <div class="controls">
                                         <input id="btnGuardar" type="submit" class="btn btn-info fa-input" name="guardar" value="Guardar"> &nbsp;                                                                                                               
-                                        <a class="btn btn-info fa-input right" href="registrar_cliente.jsp">Regresar a lista</a>  
+                                        <a class="btn btn-info fa-input right" href="registrate.jsp">Regresar al tipo de usuario</a>  
                                     </div> 
                                 </div>
 
-                            </div> 
+                            </div>
                         </div>
-                    </fieldset> 
+                    </fieldset>
+                </form:form>
                 </form>
 
             </div>
