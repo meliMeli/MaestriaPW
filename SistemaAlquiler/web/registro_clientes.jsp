@@ -8,7 +8,10 @@
 
 <!DOCTYPE html>
 <html>
-
+    <script type="text/javascript" src="<c:url value='/js/jquery-picklist.min.js'/>"></script> 
+    <script src="<c:url value='/js/administracion/curso/curso.general.registrar.js'/>" type="text/javascript"></script>
+   
+    
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">

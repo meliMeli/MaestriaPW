@@ -7,12 +7,17 @@
 <%@page import="java.util.List"%>
 <%@page import="com.sah.model.dao.HabitacionDAOHibernate"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
+<script src="<c:url value='/js/jquery.paging.js'/>" type="text/javascript"></script>
+<script src="<c:url value='/js/habitaciones/habitacion.lista.js'/>" type="text/javascript"></script>
 
 <!DOCTYPE html>
 <html>
+    <script src="<c:url value='/js/jquery.paging.js'/>" type="text/javascript"></script>
+<script src="<c:url value='/js/habitaciones/habitacion.lista.js'/>" type="text/javascript"></script>
+
 
     <head>
+        
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -62,9 +67,10 @@
 
 
 
+                    
                     <fieldset>
-
-                        <div id="id-table">                        
+ <c:if test="${grilla.total gt 0}">
+                <div id="id-table">                               
                             <table id="listado" class="table table-bordered table-hover table-striped" >
                                 <thead>
                                     <tr > 
@@ -110,6 +116,7 @@
                                 <ul id="pagination"> </ul>
                             </div>
                         </div>
+            </c:if>   
 
 
                     </fieldset>      
@@ -127,32 +134,33 @@
                     </div>
 
                     <!-- Portfolio Modals -->
+<!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
 
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-                    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-content">
-                            <div class="close-modal" data-dismiss="modal">
-                                <div class="lr">
-                                    <div class="rl">
-                                    </div>
-                                </div>
-                            </div>
+                  
 
-                        </div>
-                    </div>
-
-                    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-content">
-                            <div class="close-modal" data-dismiss="modal">
-                                <div class="lr">
-                                    <div class="rl">
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
+                
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
                     <!-- Include all compiled plugins (below), or include individual files as needed -->
                     <script src="js/bootstrap.min.js"></script>
