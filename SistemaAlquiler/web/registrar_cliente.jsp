@@ -47,16 +47,16 @@
                             <div class="span6">
 
                                 <div class="control-group">
-                                    <label   class="control-label" for="nombres">Nombres</label>                
+                                    <label   class="control-label" for="nombre">Nombres</label>                
                                     <div class="controls">
-                                        <input id="nombre" path="nombres" class="input-xlarge"  onkeypress="return valSoloLetras(event);" onchange="javascript:this.value=this.value.toUpperCase();llenarUsuario();" type="text"/>
+                                        <input id="nombre" path="nombre" class="input-xlarge"  onkeypress="return valSoloLetras(event);" onchange="javascript:this.value=this.value.toUpperCase();llenarUsuario();" type="text"/>
                                         <!--<form:errors  path="nombre"  cssClass="help-block"/>-->   
                                     </div>  
                                 </div>  
                                 <div class="control-group">
-                                    <label  class="control-label"    for="apellidos">Apellidos</label>                            
+                                    <label  class="control-label"    for="apellido">Apellidos</label>                            
                                     <div class="controls">
-                                        <input id="primerApellido" path="apellidos" class="input-xlarge" onkeypress="return valSoloLetras(event);"  onchange="javascript:this.value=this.value.toUpperCase();llenarUsuario();"  type="text"  />
+                                        <input id="primerApellido" path="apellido" class="input-xlarge" onkeypress="return valSoloLetras(event);"  onchange="javascript:this.value=this.value.toUpperCase();llenarUsuario();"  type="text"  />
                                         <!--<form:errors  path="direccion" cssClass="help-block"/>-->                      
                                     </div>  
                                 </div>   
@@ -65,6 +65,13 @@
                                     <div class="controls">
                                         <input id="segundoApellido" path="ocupacion" class="input-xlarge" onkeypress="return valSoloLetras(event);"  onchange="javascript:this.value=this.value.toUpperCase();llenarUsuario();" type="text"  />
                                         <!--<form:errors path="detalle" cssClass="help-block"/>-->    
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label  class="control-label"   for="dni">Número de DNI</label>      
+                                    <div class="controls">
+                                        <input id="fechaNacimiento" path="dni" class="input-small" type="text" />
+                                        <!--<form:errors  path="foto" cssClass="help-block"/>-->
                                     </div>
                                 </div>
                                 
@@ -88,9 +95,9 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label  class="control-label"   for="dni">Número de DNI</label>      
+                                    <label  class="control-label"   for="fecha_nac">Fecha de nacimiento: </label>      
                                     <div class="controls">
-                                        <input id="fechaNacimiento" path="dni" class="input-small" type="text" />
+                                        <input id="fechaNacimiento" path="fecha_nac" class="input-small" type="text" />
                                         <!--<form:errors  path="foto" cssClass="help-block"/>-->
                                     </div>
                                 </div>

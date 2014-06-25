@@ -59,10 +59,10 @@
                             <a href="registrate.jsp">Regístrate</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="views/sobre_nosotros.jsp" method="get">Sobre nosotros </a>
+                            <a href="sobre_nosotros.jsp" method="get">Sobre nosotros </a>
                         </li>
                         <li class="page-scroll">
-                            <a href="views/contactenos.jsp" method="get">Contactános</a>
+                            <a href="contactenos.jsp" method="get">Contactános</a>
 
                         <li class="page-scroll">
                             <!--<form action="views/listahabitaciones.jsp" method="get">-->
