@@ -17,13 +17,7 @@
         <url-pattern>/SimpleServlet</url-pattern>
     </servlet-mapping-->
 <!--   
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> parent of 78b6987... sinconflict
 
->>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
     <servlet>
         <servlet-name>detalle_habitacion</servlet-name>
         <url-pattern>/detalleHabit</url-pattern>
