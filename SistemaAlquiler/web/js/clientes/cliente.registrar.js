@@ -1,14 +1,14 @@
+/* 
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 $(document).ready(function() {
-    $('#nomCursoGeneral').focus();
-    $('span[id*="errors"]').parents('div[class*="control-group"]').addClass('error');
-     $("#listaCursoEspecifico").pickList({
-        sourceListLabel: "Disponibles",
-        targetListLabel: "Seleccionados",
-        addAllLabel: "Agregar Todos",
-        addLabel: "Agregar",
-        removeAllLabel: "Quitar Todos",
-        removeLabel: "Quitar",
-        sortItems: false
 
-    });
+    //$('#nombre').focus();
+    $("#fechaNac").val($.datepicker.formatDate('dd/mm/yy', new Date(2000, 01, 01)));
+    $("#fechaNac").datepicker({yearRange: "1945:2024"});
+
+
+    
+    $("#msg-error").hide();
 });

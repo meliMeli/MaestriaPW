@@ -7,15 +7,9 @@
 <%@page import="java.util.List"%>
 <%@page import="com.sah.model.dao.HabitacionDAOHibernate"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<script src="<c:url value='/js/jquery.paging.js'/>" type="text/javascript"></script>
-<script src="<c:url value='/js/habitaciones/habitacion.lista.js'/>" type="text/javascript"></script>
 
 <!DOCTYPE html>
 <html>
-    <script src="<c:url value='/js/jquery.paging.js'/>" type="text/javascript"></script>
-    <script src="<c:url value='/js/habitaciones/habitacion.lista.js'/>" type="text/javascript"></script>
-
-
     <head>
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -29,13 +23,26 @@
         <link href="css/freelancer.css" rel="stylesheet" type="text/css">
 
         <!-- Fonts -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!-- link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" -->
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="js/jquery-ui.js" type="text/javascript"></script>
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery.pajinate.js"></script>
+        <script >
+            $(document).ready(function(){
+                $('#id-table').pajinate({
+                    items_per_page : 5,
+                    item_container_id : '.alt_content',
+                    nav_panel_id : '.alt_page_navigation'
+                    
+                });
+            });
+        </script>
 
     </head>
     <body>
@@ -65,69 +72,58 @@
                     <!--<input type="submit" href="registro_cuartos.jsp" value="Agregar cuarto" class="btn btn-success btn-large" >-->
                     <a role="button" href="registro_cuartos.jsp" class="btn btn-primary">Agregar cuartos +</a>
 
-
-
-
                     <fieldset>
-                        <c:if test="${grilla.total gt 0}">
-                            <div id="id-table">                               
-                                <table id="listado" class="table table-bordered table-hover table-striped" >
-                                    <thead>
-                                        <tr > 
-                                            <th>Nro</th> 
-                                            <th>Dirección</th>                             
-                                            <th>Características</th>  
-                                            <th>Restricciones</th> 
-                                            <th>Teléfono contacto</th> 
-                                            <th>Ver</th> 
+
+                        <div id="id-table">                               
+                            <table id="listado" class="table table-bordered table-hover table-striped" >
+                                <thead>
+                                    <tr > 
+                                        <th>Nro</th> 
+                                        <th>Dirección</th>                             
+                                        <th>Características</th>  
+                                        <th>Restricciones</th> 
+                                        <th>Teléfono contacto</th> 
+                                        <th>Ver</th> 
 
 
-                                        </tr>  
-                                    </thead>
-                                    <tbody>
-                                        <%
-                                            HabitacionDAOHibernate habitacion;
-                                            habitacion = new HabitacionDAOHibernate();
-                                            habitacion.init();
+                                    </tr>  
+                                </thead>
+                                <tbody>
+                                    <%
+                                        HabitacionDAOHibernate habitacion;
+                                        habitacion = new HabitacionDAOHibernate();
+                                        habitacion.init();
 
-                                            List<Cuarto> listaHabita = habitacion.obtenerListaHabitaciones();
-                                            System.out.println("safas " + listaHabita.size());
-                                            int status = 0;
-                                            for (Cuarto alumno : listaHabita) {
+                                        List<Cuarto> listaHabita = habitacion.obtenerListaHabitaciones();
+                                        System.out.println("safas " + listaHabita.size());
+                                        int status = 0;
+                                        for (Cuarto alumno : listaHabita) {
 
-                                        %>     
+                                    %>     
 
-                                        <tr id="<%=status%>" >
-                                            <td><%=status + 1%></td>
-                                            <td><%=alumno.getDireccion()%></td>
-                                            <td><%=alumno.getCaracteristicas()%></td>  
-                                            <td><%=alumno.getRestricciones()%></td>
-                                            <td><%=alumno.getTelefonoContacto()%></td>
+                                    <tr id="<%=status%>" >
+                                        <td><%=status + 1%></td>
+                                        <td><%=alumno.getDireccion()%></td>
+                                        <td><%=alumno.getCaracteristicas()%></td>  
+                                        <td><%=alumno.getRestricciones()%></td>
+                                        <td><%=alumno.getTelefonoContacto()%></td>
 
-                                             <!--<td> <a role="button" href="detalle_habitacion.jsp" class="btn btn-primary">Ver detalles »</a></td>  -->
-                                            <td>
-                                                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                                                    Ver detalles»
-                                                </button>
-                                            </td>
+                                        <td>
+                                            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                                Ver detalles»
+                                            </button>
+                                        </td>
 
-                                        </tr>
-                                        <%
-                                                status++;
-                                            }
+                                    </tr>
+                                    <%
+                                            status++;
+                                        }
 
-
-
-                                        %>
-                                    </tbody>                            
-                                </table>
-                                <div class="pagination pagination-centered">        
-                                    <ul id="pagination"> </ul>
-                                </div>
-                            </div>
-                        </c:if>   
-
-
+                                    %>
+                                </tbody>                            
+                            </table>
+                            <div class="page_navigation"></div>
+                        </div>
                     </fieldset>      
                     <!--                    <form action="detalle_habitacion.jsp" method="get">
                                             <p><a role="button" class="btn btn-primary">Ver detalles »</a></p>
@@ -191,20 +187,16 @@
 
                                             </div>
 
-                                            <div class="span4">
+                                         
                                                 <div class="span4">
                                                     <textarea>Ubicación</textarea>
 
                                                 </div>
-                                                </br>
-                                                <div class="span4">
-                                                    <textarea> Detalle</textarea>
 
-                                                </div>    
+                                            <div class="span4">
+                                                <textarea> Detalle</textarea>
 
-
-                                            </div>
-
+                                            </div> 
 
                                         </div>
 

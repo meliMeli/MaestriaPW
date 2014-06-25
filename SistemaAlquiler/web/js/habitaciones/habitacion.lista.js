@@ -1,6 +1,6 @@
 $(document).ready(function() {  
     $('#div-error').hide(); 
-    var dataPaginador = new Paginador('pagination', $('#inicio').val(), $('#total').val(), 'pag', $('#cantidad').val());
+    var dataPaginador = new Paginador('pagination',1,20, 'pag', $('#cantidad').val());
     fnPaginadorMini(dataPaginador);
 });
 

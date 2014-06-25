@@ -8,11 +8,24 @@
 
 <!DOCTYPE html>
 <html>
-    <script type="text/javascript" src="<c:url value='/js/jquery-picklist.min.js'/>"></script> 
-    <script src="<c:url value='/js/administracion/curso/curso.general.registrar.js'/>" type="text/javascript"></script>
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+     <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery-picklist.min.js"></script> 
+    <script type="text/javascript" src="js/clientes/cliente_registrar.js"></script>
    
     
     <head>
+        <meta charset="utf-8">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -24,7 +37,8 @@
         <link href="css/freelancer.css" rel="stylesheet" type="text/css">
 
         <!-- Fonts -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+       
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,7 +56,7 @@
             <div class="row-fluid formulario">
                 <form id="frmReghab" method="GET"  action="registroCliente"  class="form-horizontal">
                     <fieldset >
-                        <legend><h4>Datos Habitación</h4></legend>
+                        <legend><h4></h4></legend>
                         <div class="row-fluid">
 
                             <div class="span6">
@@ -61,11 +75,23 @@
                                         <!--<form:errors  path="direccion" cssClass="help-block"/>-->                      
                                     </div>  
                                 </div>   
+                                
                              </div>
 
 
+                            
+                            
+                            
                             <div class="span6">
 
+                                <!--<p>Date: <input type="text" id="datepicker"></p>-->
+                                <div class="control-group">
+                                    <label  class="control-label"    for="fechaNac">Fecha Nacimiento </label>                            
+                                    <div class="controls">
+                                        <input id="datepicker" name="fechaNac" path="fechaNac" cssClass="input-xlarge" type="text"  />
+                                        <!--<form:errors  path="direccion" cssClass="help-block"/>-->                      
+                                    </div>  
+                                </div>   
                                 <div class="control-group">
                                     <label class="control-label" for="correo">Correo </label>                            
                                     <div class="controls">

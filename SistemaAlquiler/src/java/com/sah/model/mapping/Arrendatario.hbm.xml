@@ -25,9 +25,7 @@
     <property name="telefono" type="string">
       <column length="45" name="telefono"/>
     </property>
-    <property name="correo" type="string">
-      <column length="45" name="correo"/>
-    </property>
+    
      
     <set inverse="true" name="cuartos">
       <key>
