@@ -1,2 +1,5 @@
 SistemaAlquiler/build/web/WEB-INF/web.xml
 *.xml
+SistemaAlquiler/nbproject/build-impl.xml~
+*.xml
+SistemaAlquiler/nbproject/build-impl.xml~
