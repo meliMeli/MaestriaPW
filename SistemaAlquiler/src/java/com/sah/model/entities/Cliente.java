@@ -2,6 +2,7 @@ package com.sah.model.entities;
 // Generated 11-jun-2014 0:40:44 by Hibernate Tools 3.2.1.GA
 
 
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -18,6 +19,7 @@ public class Cliente  implements java.io.Serializable {
      private String correo;
      private String telefono;
      private String dni;
+     private Date fechaNac;
      private Set reservas = new HashSet(0);
 
     public Cliente() {
@@ -32,7 +34,7 @@ public class Cliente  implements java.io.Serializable {
         this.correo = correo;
         this.telefono = telefono;
     }
-    public Cliente(int idcliente, String nombre, String apellido, String ocupacion, String correo, String telefono, String dni, Set reservas) {
+    public Cliente(int idcliente, String nombre, String apellido, String ocupacion, String correo, String telefono, String dni, Set reservas,Date fechaNac) {
        this.idcliente = idcliente;
        this.nombre = nombre;
        this.apellido = apellido;
@@ -41,6 +43,7 @@ public class Cliente  implements java.io.Serializable {
        this.telefono = telefono;
        this.dni = dni;
        this.reservas = reservas;
+       this.fechaNac = fechaNac;
     }
    
     public int getIdcliente() {
@@ -98,6 +101,14 @@ public class Cliente  implements java.io.Serializable {
     
     public void setReservas(Set reservas) {
         this.reservas = reservas;
+    }
+
+    public Date getFechaNac() {
+        return fechaNac;
+    }
+
+    public void setFechaNac(Date fechaNac) {
+        this.fechaNac = fechaNac;
     }
 
 
