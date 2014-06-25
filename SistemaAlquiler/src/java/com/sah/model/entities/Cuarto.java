@@ -126,7 +126,7 @@ public class Cuarto implements Serializable {
     public void setDetalleUbi(String detalleUbi) {
         this.detalleUbi = detalleUbi;
     }
-
+   
     public String getDireccion() {
         return direccion;
     }
