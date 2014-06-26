@@ -3,3 +3,4 @@ SistemaAlquiler/build/web/WEB-INF/web.xml
 SistemaAlquiler/nbproject/build-impl.xml~
 *.xml
 SistemaAlquiler/nbproject/build-impl.xml~
+/SistemaAlquiler/dist/
