@@ -35,13 +35,24 @@
         <script type="text/javascript" src="js/jquery.pajinate.js"></script>
         <script >
             $(document).ready(function(){
-                $('#id-table').pajinate({
+               /* $('#id-table').pajinate({
                     items_per_page : 5,
                     item_container_id : '.alt_content',
                     nav_panel_id : '.alt_page_navigation'
                     
-                });
+                });*/
+                totales();
             });
+            function totales(){
+//                $.ajax({
+//                    url : 'Totales.jsp',
+//                    data : { search: 'test' },
+//                    dataType: 'json',
+//                    success : function(json) {
+//                        alert(json.title);
+//                    }
+//                });
+            }
         </script>
 
     </head>
@@ -70,7 +81,7 @@
 
                     <hr>
                     <!--<input type="submit" href="registro_cuartos.jsp" value="Agregar cuarto" class="btn btn-success btn-large" >-->
-                    <a role="button" href="registro_cuartos.jsp" class="btn btn-primary">Agregar cuartos +</a>
+                    <a role="button" href="faces/regstroHabitacionesFaces.jsp" class="btn btn-primary">Agregar cuartos +</a>
 
                     <fieldset>
 

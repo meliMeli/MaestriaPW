@@ -12,30 +12,29 @@
       xmlns="http://www.w3.org/1999/xhtml"     
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:p="http://primefaces.org/ui"
+     
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:c="http://java.sun.com/jsp/jstl/core">
-<html>
 
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
 
         <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="css/freelancer.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/freelancer.css" rel="stylesheet" type="text/css"/>
 
         <!-- Fonts -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
 
     </head>
     <body>
@@ -46,10 +45,9 @@
             </div>
             <div class="row-fluid formulario">
                 <form id="frmReghab" method="GET"  action="registroHabitacion"  class="form-horizontal">
-                    <fieldset >
+                    <fieldset>
                         <legend><h4>Datos Habitación</h4></legend>
                         <div class="row-fluid">
-
                             <div class="span6">
 
                                 <!--                                <div class="control-group">
@@ -88,6 +86,9 @@
                                         <input id="direccion" name="direccion" path="direccion" class="input-xlarge" type="text"  />
                                         <!--<form:errors  path="direccion" cssClass="help-block"/>-->                      
                                     </div>  
+                                    <h:inputText id="txtDireccion">
+                                        <f:validateRegex pattern="^[a-zA-Z]+$" />
+                                    </h:inputText>
                                 </div>   
                                 <div class="control-group">
                                     <label class="control-label" for="detalle">Características</label>                           
@@ -143,7 +144,7 @@
                             <div class="span12 form-actions">
                                 <div class="control-group">
                                     <div class="controls">
-                                        <input id="btnGuardar" type="submit" class="btn btn-info fa-input" name="guardar" value="Guardar"> &nbsp;                                                                                                               
+                                        <input id="btnGuardar" type="submit" class="btn btn-info fa-input" name="guardar" value="Guardar"/>                                                                                                               
                                         <a class="btn btn-info fa-input right" href="listahabitaciones.jsp">Regresar a lista</a>  
                                     </div> 
                                 </div>
@@ -164,7 +165,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; 2014 - @Karla @Meli
+                        Copyright  2014 - @Karla @Meli
                     </div>
                 </div>
             </div>

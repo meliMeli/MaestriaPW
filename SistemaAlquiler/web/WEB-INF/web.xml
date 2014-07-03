@@ -9,9 +9,19 @@
             30
         </session-timeout>
     </session-config>
-    <welcome-file-list>
-        <welcome-file>inicio.jsp</welcome-file>
-    </welcome-file-list>
+        <context-param>
+        <param-name>javax.faces.PROJECT_STAGE</param-name>
+        <param-value>Development</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>/faces/*</url-pattern>
+    </servlet-mapping>
     <!-- servlet>
         <servlet-name>login</servlet-name>
         <servlet-class>com.sah.controller.Login</servlet-class>
@@ -28,6 +38,7 @@
     </servlet>-->
     
     <welcome-file-list>
-        <welcome-file>faces/Vendedor.xhtml</welcome-file>
+        <welcome-file>faces/inicio.jsp</welcome-file>
     </welcome-file-list>
+    
 </web-app>
