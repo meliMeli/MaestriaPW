@@ -3,11 +3,19 @@
     Created on : 03-jun-2014, 23:23:24
     Author     : Meli
 --%>
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 <%@page import="com.sah.model.entities.Cuarto"%>
 <%@page import="java.util.List"%>
 <%@page import="com.sah.model.dao.HabitacionDAOHibernate"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/master
 <!DOCTYPE html>
 <html>
 
@@ -36,6 +44,7 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class=" span2">
+<<<<<<< HEAD
                 </div>
                 <div class=" span10">
                     <h1>SAH</h1>
@@ -74,6 +83,8 @@
 <!--                    <form action="detalle_habitacion.jsp" method="get">
                         <p><a role="button" class="btn btn-primary">Ver detalles »</a></p>
                     </form>-->
+=======
+>>>>>>> origin/master
                     <% out.print(request.getAttribute("msg"));%>
                 </div>
                 <div class=" span10">
@@ -153,6 +164,13 @@
                     <!--                    <form action="detalle_habitacion.jsp" method="get">
                                             <p><a role="button" class="btn btn-primary">Ver detalles »</a></p>
                                         </form>-->
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> origin/master
                     <div class="scroll-top page-scroll visible-xs visble-sm">
                         <a class="btn btn-primary" href="#page-top">
                             <i class="fa fa-chevron-up"></i>

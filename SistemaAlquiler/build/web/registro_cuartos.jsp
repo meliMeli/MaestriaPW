@@ -4,6 +4,11 @@
     Author     : Meli
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/master
 <!DOCTYPE html>
 <html>
 
@@ -32,6 +37,7 @@
         <div class="container-fluid fondoGris">
             <div class="row-fluid  div-titulo">
                 <h3 class="span6">Registrar Habitación </h3>
+<<<<<<< HEAD
                 <div class="span6"> <a  href="listarCuartos.html" class=" btn btn-info fa-input pull-right">Volver a Listado</a>   </div> 
             </div>
             <div class="row-fluid formulario">
@@ -40,6 +46,8 @@
         <div class="container-fluid fondoGris">
             <div class="row-fluid  div-titulo">
                 <h3 class="span6">Registrar Habitación </h3>
+=======
+>>>>>>> origin/master
                 <div class="span6"> <a  href="listarAlumnos.html" class=" btn btn-info fa-input pull-right">Volver a Listado</a>   </div> 
             </div>
             <div class="row-fluid formulario">
@@ -49,6 +57,7 @@
                         <div class="row-fluid">
 
                             <div class="span6">
+<<<<<<< HEAD
                                 <div class="control-group">
                                     <label   class="control-label" for="nombre">Ubicación</label>                
                                     <div class="controls">
@@ -60,6 +69,9 @@
                                     <label  class="control-label"    for="direccion">Dirección </label>                            
                                     <div class="controls">
                                         <input id="primerApellido" path="direccion" class="input-xlarge" onkeypress="return valSoloLetras(event);"  onchange="javascript:this.value=this.value.toUpperCase();llenarUsuario();"  type="text"  />
+=======
+
+>>>>>>> origin/master
                                 <!--                                <div class="control-group">
                                                                     <label   class="control-label" for="departamento">Departamento</label>                
                                                                     <div class="controls">
@@ -98,12 +110,15 @@
                                     </div>  
                                 </div>   
                                 <div class="control-group">
+<<<<<<< HEAD
                                     <label   class="control-label"   for="detalle">Detalle</label>                           
                                     <div class="controls">
                                         <input id="segundoApellido" path="detalle" class="input-xlarge" onkeypress="return valSoloLetras(event);"  onchange="javascript:this.value=this.value.toUpperCase();llenarUsuario();" type="text"  />
                                         <!--<form:errors path="detalle" cssClass="help-block"/>-->    
                                     </div>
                                 </div> 
+=======
+>>>>>>> origin/master
                                     <label class="control-label" for="detalle">Características</label>                           
                                     <div class="controls">
                                         <input id="detalle" name="detalle" class="input-xlarge"  type="text"  />
@@ -117,16 +132,23 @@
                                         <!--<form:errors path="detalle" cssClass="help-block"/>-->    
                                     </div>
                                 </div> 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
                             </div>
 
 
                             <div class="span6">
 
+<<<<<<< HEAD
 
                                 <div class="control-group">
                                     <label class="control-label" for="telefono">Teléfono contacto </label>                            
                                     <div class="controls">
                                         <input id="celular" path="telefono" class="input-large"   type="text"  />
+=======
+>>>>>>> origin/master
                                 <div class="control-group">
                                     <label class="control-label" for="telefonoContacto">Teléfono contacto </label>                            
                                     <div class="controls">
@@ -168,10 +190,20 @@
                             </div> 
                         </div>
                     </fieldset> 
+<<<<<<< HEAD
                 </form:form>
                 </form>
             </div>
         </div>
+=======
+                </form>
+
+            </div>
+        </div>
+
+
+
+>>>>>>> origin/master
     </body>
     <footer class="text-center">
         <div class="footer-below">

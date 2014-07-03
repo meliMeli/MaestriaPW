@@ -4,6 +4,11 @@
     Author     : Meli
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/master
 <!DOCTYPE html>
 <html>
 
@@ -97,9 +102,12 @@
             <div class="control-group">
                 <div class="controls">
                     <div class="text-center">
+<<<<<<< HEAD
 
                         <input id="btnGuardar" type="submit" class="btn btn-info fa-input" name="guardar" value="Alquilar"> &nbsp;                                                                                                               
 
+=======
+>>>>>>> origin/master
                         <!--<input id="btnGuardar" type="submit" class="btn btn-info fa-input" name="guardar" value="Alquilar"> &nbsp;-->                                                                                                               
                          <a class="btn btn-info fa-input right" href="alquilado.jsp">Alquilar</a>
                         <a class="btn btn-info fa-input right" href="listahabitaciones.jsp">Regresar a lista</a>  

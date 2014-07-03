@@ -849,10 +849,14 @@ exists or setup the property manually. For example like this:
     </target>
     <target depends="init, deps-jar, -pre-pre-compile, -pre-compile, -copy-manifest, -copy-persistence-xml, -copy-webdir, library-inclusion-in-archive,library-inclusion-in-manifest" if="have.sources" name="-do-compile">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <webproject2:javac destdir="${build.classes.dir}" gensrcdir="${build.generated.sources.dir}"/>
 =======
         <!--<webproject2:javac destdir="${build.classes.dir}" gensrcdir="${build.generated.sources.dir}"/>-->
 >>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
+=======
+        <!--<webproject2:javac destdir="${build.classes.dir}" gensrcdir="${build.generated.sources.dir}"/>-->
+>>>>>>> origin/master
         <copy todir="${build.classes.dir}">
             <fileset dir="${src.dir}" excludes="${build.classes.excludes},${excludes}" includes="${includes}"/>
         </copy>
@@ -986,12 +990,17 @@ exists or setup the property manually. For example like this:
     </target>
     <target depends="init" name="library-inclusion-in-archive" unless="dist.ear.dir">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <!--<copyfiles files="${libs.hibernate-support.classpath}" todir="${build.web.dir}/WEB-INF/lib"/>-->
         <!--<copyfiles files="${libs.ejb3-persistence.classpath}" todir="${build.web.dir}/WEB-INF/lib"/>-->
 =======
         <copyfiles files="${libs.hibernate-support.classpath}" todir="${build.web.dir}/WEB-INF/lib"/>
         <copyfiles files="${libs.ejb3-persistence.classpath}" todir="${build.web.dir}/WEB-INF/lib"/>
 >>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
+=======
+        <copyfiles files="${libs.hibernate-support.classpath}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${libs.ejb3-persistence.classpath}" todir="${build.web.dir}/WEB-INF/lib"/>
+>>>>>>> origin/master
         <!--<copyfiles files="${file.reference.mysql-connector-java-5.1.18-bin.jar}" todir="${build.web.dir}/WEB-INF/lib"/>-->
     </target>
     <target depends="init" if="dist.ear.dir" name="-clean-webinf-lib">
@@ -1413,7 +1422,11 @@ exists or setup the property manually. For example like this:
     <target depends="init,undeploy-clean,deps-clean,do-clean,check-clean,-post-clean" description="Clean build products." name="clean"/>
     <target depends="clean" description="Clean build products." name="clean-ear"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 </project>
 =======
 </project>
 >>>>>>> 1bb419f5a5c4de579ef232987fad713f08313251
+=======
+</project>
+>>>>>>> origin/master
