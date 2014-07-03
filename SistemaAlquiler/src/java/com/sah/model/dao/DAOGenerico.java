@@ -25,7 +25,10 @@ public abstract class DAOGenerico {
     }
     public void end(){
         if(session!=null){
-            session.close();
+            if(session.isOpen()){
+               session.close(); 
+            }
+            
         }
     }
     public void endError(){
